@@ -2,13 +2,19 @@
 
 @font-face {
     font-family: 'GTF-Kosmos';
-    src: url("Pilowlava-Regular.otf") format("truetype");
+    src: url("GTFKosmosTRIAL-Regular.otf") format("truetype");
 }
 
 @font-face {
     font-family: 'Helvetica Narrow';
     src: url("NeueMontreal-Regular.ttf") format("truetype");
 }
+
+@font-face {
+    font-family: 'Victorianna';
+    src: url("VTF victorianna thin.otf") format("truetype");
+}
+
 
 
 
@@ -28,7 +34,9 @@
     height: 100vh;
     width: 100%;
     position: relative;
-    background: rgb(41, 197, 33);
+    /* background: rgb(41, 197, 33); */
+    background: rgb(164,202,104);
+background: linear-gradient(0deg, rgba(164,202,104,1) 0%, rgba(230,147,95,1) 12%, rgba(220,103,85,1) 27%, rgba(164,202,104,1) 45%, rgba(223,140,66,1) 66%, rgba(233,197,82,1) 81%, rgba(224,105,87,1) 90%, rgba(164,202,104,1) 100%);
 }
 
 
@@ -37,7 +45,7 @@
 
 #content-left {
    
-    
+     
     width: 30%;
     height: 100%;
     position: absolute;
@@ -49,7 +57,7 @@
    
     
     left: 70%;
-    width: 20%;
+    width: 25%;
     height: 100%;
     position: absolute;
     padding: 2rem;
@@ -62,16 +70,27 @@
 .content h2 {
     
     font-size: 120px;
-    color: rgb(102, 70, 187);
+    line-height: 90%;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+text-stroke: 2px white;
+    
 }
 
 
 /* This styles the paragraph in the 3D description*/
 
-.content p {
+#content-left p {
     font-size: 20px;
     font-family: 'Helvetica Narrow';
-    color: rgb(102, 70, 187);
+    color: rgb(250, 250, 250);
+}
+
+#content-right p {
+    font-size: 50px;
+    line-height: 110%;
+    font-family: 'Victorianna';
+    color: rgb(250, 250, 250);
 }
 
 
@@ -85,11 +104,11 @@
     margin-top: 2%;
     margin-left: center;
     border: solid 3px;
-    border-color: rgb(102, 70, 187);
+    color: rgb(250, 250, 250);
     outline: none;
     border-radius: 50px;
     background: none;
-    color: rgb(102, 70, 187);
+    color: rgb(250, 250, 250);
 }
 
 
@@ -122,4 +141,10 @@
     top: 0;
     left: 0;
     border: none;
+}
+
+/*  INVENTORY BAR */
+
+.inventory button{
+
 }
