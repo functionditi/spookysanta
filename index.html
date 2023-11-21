@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>3D Object</title>
-    <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
+    <title>SPOOKY SANTA!</title>
+   
     <link rel="stylesheet" href="css/style.css">
 
     <!--Imports a model-viewer JavaScript code -->
@@ -43,8 +43,10 @@
             <br>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorum quos quis nesciunt rerum reprehenderit explicabo sunt minima voluptate facilis doloremque, et dolorem ducimus ad nostrum dolore quae quidem voluptatem.</p>
             <br><br>
-            <button>ADITI</button>
+            <button onclick="showSkeleton()">SKELETON</button>
+            <button onclick="showMuscle()">MUSCLE</button>
             <button>ANA</button>
+            <button>ADU</button>
             <button>AFIQ</button>
             <button>MATIN</button>
             <button>NORA</button>
@@ -67,3 +69,29 @@
 </body>
 
 </html>
+
+<script>
+
+
+  
+
+function showSkeleton() {
+   
+  var x = document.getElementById("skeleton");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
+function showMuscle() {
+    
+  var x = document.getElementById("muscle");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
