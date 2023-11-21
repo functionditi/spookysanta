@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>3D Object</title>
+    <!-- <script src='https://kit.fontawesome.com/a076d05399.js'></script> -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Imports a model-viewer JavaScript code -->
+    <!--It helps to handle how the 3D Object would be displayed -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+
+<body>
+    <!-- Main Container -->
+    <div id="container">
+
+       
+
+        <!-- An aside -->
+        <!-- This is for holding the 3D object -->
+        <div id="aSide">
+            <!-- 3D objsect -->
+            <!-- This inserts the 3D object inside the aside container -->
+            <div id="skeleton">
+                <model-viewer src="assets/skeleton/scene.gltf" alt="VR Headset" auto-rotate camera-controls ar ios-src="assets/skeleton/scene.gltf">
+                </model-viewer>
+            </div>
+            <div id="muscle" style="display: none;">
+            <model-viewer src="assets/muscle/scene.gltf" alt="VR Headset" auto-rotate camera-controls ar ios-src="assets/muscle/scene.gltf">
+            </model-viewer>
+             </div>
+        </div>
+
+        
+
+        <!-- Content container -->
+        <!-- This is for holding some brief description about the 3D object -->
+        <div class="content" id="content-left">
+            <h2>SPOOKY SANTA!</h2>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorum quos quis nesciunt rerum reprehenderit explicabo sunt minima voluptate facilis doloremque, et dolorem ducimus ad nostrum dolore quae quidem voluptatem.</p>
+            <br><br>
+            <button>ADITI</button>
+            <button>ANA</button>
+            <button>AFIQ</button>
+            <button>MATIN</button>
+            <button>NORA</button>
+            <button>YING JIA</button>
+            <button>ROSSANE</button>
+            <button>NADIAH</button>
+        </div>
+
+        <div class="content" id="content-right">
+            
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolorum quos quis nesciunt rerum reprehenderit explicabo sunt minima voluptate facilis doloremque, et dolorem ducimus ad nostrum dolore quae quidem voluptatem.
+
+                <br><br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, dolore itaque cupiditate voluptates esse aperiam ab minus temporibus similique est beatae et saepe blanditiis iste nisi. Perferendis non minima adipisci.
+            </p>
+            
+        </div>
+
+    </div>
+</body>
+
+</html>

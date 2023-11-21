@@ -1,0 +1,125 @@
+/* The webpage overall styling */
+
+@font-face {
+    font-family: 'GTF-Kosmos';
+    src: url("Pilowlava-Regular.otf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Helvetica Narrow';
+    src: url("NeueMontreal-Regular.ttf") format("truetype");
+}
+
+
+
+* {
+    font-family: 'GTF-Kosmos';
+    padding: 0;
+    margin: 0;
+    
+    
+    color: rgb(0, 0, 0);
+}
+
+
+/*  This is for styling the main container that holds everything */
+
+#container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: rgb(41, 197, 33);
+}
+
+
+
+/* This styles the descriptions of the 3D object */
+
+#content-left {
+   
+    
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    padding: 2rem;
+    
+}
+
+#content-right {
+   
+    
+    left: 70%;
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    padding: 2rem;
+    
+}
+
+
+/* This styles the heading in the 3D description */
+
+.content h2 {
+    
+    font-size: 120px;
+    color: rgb(102, 70, 187);
+}
+
+
+/* This styles the paragraph in the 3D description*/
+
+.content p {
+    font-size: 20px;
+    font-family: 'Helvetica Narrow';
+    color: rgb(102, 70, 187);
+}
+
+
+/* This styles the button in the 3D description*/
+
+.content button {
+    font-family: 'Helvetica Narrow';
+    width: auto;
+    padding: 2% 5% 2% 5%;
+    font-size: 26px;
+    margin-top: 2%;
+    margin-left: center;
+    border: solid 3px;
+    border-color: rgb(102, 70, 187);
+    outline: none;
+    border-radius: 50px;
+    background: none;
+    color: rgb(102, 70, 187);
+}
+
+
+/* This adds some hover effects over the button */
+
+.content button:hover {
+    background: rgb(13, 255, 0);
+}
+
+
+/* This styles the aside container */
+
+#aSide {
+    
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    
+}
+
+
+/* This styles the 3D object inserted in the aside container */
+
+#aSide model-viewer {
+    /* height: 600px; */
+    width: 100%;
+    height: 900px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: none;
+}
