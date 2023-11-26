@@ -24,14 +24,44 @@
         <div id="aSide">
             <!-- 3D objsect -->
             <!-- This inserts the 3D object inside the aside container -->
-            <div id="skeleton">
-                <model-viewer src="assets/skeleton/scene.gltf" alt="VR Headset" auto-rotate camera-controls ar ios-src="assets/skeleton/scene.gltf">
+            <div id="ana" class="element3d">
+                <model-viewer  id="ana-color"  src="assets/ana/scene.gltf" alt="ana model" auto-rotate auto-rotate-delay="0" rotation-per-second="800%" interaction-prompt="none" environment-image="assets/bggrad-1.png"
+                camera-controls ar ios-src="assets/ana/scene.gltf">
+          
+                </model-viewer>
+              
+            </div>
+            <div id="adu" class="element3d" style="display: none;">
+                <model-viewer src="assets/aditi/scene.gltf" alt="adu model" auto-rotate auto-rotate-delay="0" rotation-per-second="800%" interaction-prompt="none" environment-image="assets/purple.png"
+                camera-controls ar ios-src="assets/aditi/scene.gltf">
                 </model-viewer>
             </div>
-            <div id="muscle" style="display: none;">
-            <model-viewer src="assets/muscle/scene.gltf" alt="VR Headset" auto-rotate camera-controls ar ios-src="assets/muscle/scene.gltf">
+            <div id="afiq" class="element3d" style="display: none;">
+              <model-viewer src="assets/skeleton/scene.gltf" alt="afiq model" auto-rotate camera-controls ar ios-src="assets/skeleton/scene.gltf">
+              </model-viewer>
+            </div>
+            <div id="matin" class="element3d" style="display: none;">
+                <model-viewer src="assets/muscle/scene.gltf" alt="matin model" auto-rotate camera-controls ar ios-src="assets/muscle/scene.gltf">
+                </model-viewer>
+            </div>
+            <div id="nora" class="element3d" style="display: none;">
+              <model-viewer src="assets/skeleton/scene.gltf" alt="ana model" auto-rotate camera-controls ar ios-src="assets/skeleton/scene.gltf">
+              </model-viewer>
+          </div>
+          <div id="yingjia" class="element3d" style="display: none;">
+              <model-viewer src="assets/muscle/scene.gltf" alt="adu model" auto-rotate camera-controls ar ios-src="assets/muscle/scene.gltf">
+              </model-viewer>
+          </div>
+          <div id="ross" class="element3d" style="display: none;">
+            <model-viewer src="assets/skeleton/scene.gltf" alt="afiq model" auto-rotate camera-controls ar ios-src="assets/skeleton/scene.gltf">
             </model-viewer>
-             </div>
+          </div>
+          <div id="nad" class="element3d" style="display: none;">
+              <model-viewer src="assets/muscle/scene.gltf" alt="matin model" auto-rotate camera-controls ar ios-src="assets/muscle/scene.gltf">
+              </model-viewer>
+          </div>
+             
+             
         </div>
 
         
@@ -39,19 +69,26 @@
         <!-- Content container -->
         <!-- This is for holding some brief description about the 3D object -->
         <div class="content" id="content-left">
-            <h2>SPOOKY SANTA!</h2>
+            <h2>SPOOKY SANTA</h2>
             <br> <br>
             
-            <button onclick="showSkeleton()">SKELETON</button>
-            <button onclick="showMuscle()">MUSCLE</button>
-            <button>ANA</button>
-            <button>ADU</button>
-            <button>AFIQ</button>
-            <button>MATIN</button>
-            <button>NORA</button>
-            <button>YING JIA</button>
-            <button>ROSSANE</button>
-            <button>NADIAH</button>
+
+
+            <button onclick="showElement3D('ana')">ana</button>
+            <button onclick="showElement3D('adu')">adu</button>
+            <button onclick="showElement3D('afiq')">afiq</button>
+            <button onclick="showElement3D('matin')">matin</button>
+            <button onclick="showElement3D('nora')">nora</button>
+            <button onclick="showElement3D('yingjia')">ying jia</button>
+            <button onclick="showElement3D('ross')">ross</button>
+            <button onclick="showElement3D('nad')">nad</button>
+
+          
+            <div class="controls" id="color-controls">
+              <button data-color="rgb(185, 144, 197)" style="color: rgb(185, 144, 197);">color me</button>
+              <!-- <button data-color="#00ff00">invert me</button>
+              <button data-color="#0000ff">Blue</button> -->
+            </div>
         </div>
 
         <div class="content" id="content-right">
@@ -81,7 +118,11 @@
             
         </div>
 
+        <div id="dvd"></div>
+
     </div>
+
+    
 </body>
 
 </html>
@@ -89,25 +130,138 @@
 <script>
 
 
-  
+function showElement3D(idName) {
 
-function showSkeleton() {
+  if (idName!='all') {
+
+    hideTheRest();
    
-  var x = document.getElementById("skeleton");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
+   var x = document.getElementById(idName);
+   if (x.style.display === "none") {
+     x.style.display = "block";
+   } else {
+     x.style.display = "none";
+   }
+ 
+   changeBackground(idName);
   }
+ 
+
+  
 }
 
-function showMuscle() {
-    
-  var x = document.getElementById("muscle");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
+function changeBackground(idName){
+
+  if (idName=='ana'){
+    var bg=document.getElementById("container");
+  bg.style.background="linear-gradient(0deg, rgba(0,8,5,1) 2%, rgba(32,157,89,1) 14%, rgba(187,210,192,1) 31%, rgba(0,8,5,1) 44%, rgba(57,202,104,1) 53%, rgba(199,223,199,1) 63%, rgba(32,157,89,1) 76%, rgba(0,0,0,1) 86%, rgba(0,104,55,1) 99%)";
   }
+
+  else if (idName=='adu'){
+    var bg=document.getElementById("container");
+  bg.style.background="linear-gradient(0deg, rgba(53,4,130,1) 0%, rgba(195,124,84,1) 12%, rgba(223,148,75,1) 18%, rgba(177,196,52,1) 23%, rgba(138,170,0,1) 35%, rgba(124,112,66,1) 44%, rgba(104,26,166,1) 50%, rgba(161,78,157,1) 68%, rgba(223,135,71,1) 72%, rgba(190,205,17,1) 76%, rgba(138,170,0,1) 88%, rgba(101,153,28,1) 92%, rgba(84,76,116,1) 98%, rgba(74,30,169,1) 100%)";
+  }
+
+  else if (idName=='afiq'){
+    var bg=document.getElementById("container");
+  bg.style.background="linear-gradient(0deg, rgba(95,130,182,1) 0%, rgba(105,196,238,1) 14%, rgba(54,19,255,1) 24%, rgba(54,19,255,1) 33%, rgba(255,255,99,1) 35%, rgba(214,239,137,1) 40%, rgba(105,196,238,1) 46%, rgba(95,130,182,1) 55%, rgba(54,19,255,1) 64%, rgba(54,19,255,1) 67%, rgba(255,255,99,1) 70%, rgba(215,224,120,1) 73%, rgba(95,130,182,1) 78%, rgba(105,196,238,1) 85%, rgba(54,19,255,1) 91%, rgba(95,130,182,1) 95%)";
+  }
+
+  else if (idName=='matin'){
+    var bg=document.getElementById("container");
+  bg.style.background="linear-gradient(0deg, rgba(164,202,104,1) 0%, rgba(230,147,95,1) 11%, rgba(220,103,85,1) 24%, rgba(164,202,104,1) 41%, rgba(223,140,66,1) 54%, rgba(233,197,82,1) 69%, rgba(224,105,87,1) 88%, rgba(164,202,104,1) 100%)";
+  }
+
+  else if (idName=='nora'){
+    var bg=document.getElementById("container");
+  bg.style.background="linear-gradient(0deg, rgba(205,55,127,1) 0%, rgba(176,86,109,1) 15%, rgba(221,142,104,1) 31%, rgba(150,46,114,1) 46%, rgba(242,213,82,1) 66%, rgba(24,154,85,1) 84%, rgba(206,56,128,1) 100%)";
+  }
+
+  else if (idName=='yingjia'){
+    var bg=document.getElementById("container");
+  bg.style.background="linear-gradient(0deg, rgba(3,91,201,1) 0, rgba(5,135,97,1) 12%, rgba(203,174,18,1) 27%, rgba(203,174,18,1) 32%, rgba(251,228,174,1) 35%, rgba(252,208,101,1) 47%, rgba(252,208,101,1) 54%, rgba(173,172,28,1) 65%, rgba(66,154,52,1) 73%, rgba(4,81,219,1) 81%, rgba(66,154,52,1) 90%, rgba(173,172,28,1) 99%)";
+  }
+
+  else if (idName=='ross'){
+    var bg=document.getElementById("container");
+  bg.style.background="linear-gradient(0deg, rgba(189,162,91,1) 0%, rgba(0,173,174,1) 4%, rgba(13,174,162,1) 17%, rgba(35,179,37,1) 26%, rgba(39,180,23,1) 33%, rgba(128,189,86,1) 39%, rgba(203,214,83,1) 45%, rgba(191,171,90,1) 51%, rgba(189,162,91,1) 65%, rgba(0,173,174,1) 81%, rgba(194,222,161,1) 89%, rgba(219,228,159,1) 100%)";
+  }
+
+  else if (idName=='nad'){
+    var bg=document.getElementById("container");
+  bg.style.background="linear-gradient(0deg, rgba(168,42,37,1) 0%, rgba(212,78,81,1) 8%, rgba(214,90,90,1) 16%, rgba(220,142,127,1) 31%, rgba(131,122,176,1) 38%, rgba(124,120,180,1) 44%, rgba(124,120,180,1) 49%, rgba(0,173,174,1) 58%, rgba(122,118,177,1) 65%, rgba(122,118,177,1) 74%, rgba(213,68,58,1) 87%, rgba(0,173,174,1) 99%)";
+  }
+  
+ 
 }
+
+
+function hideTheRest(){
+  var y=document.getElementsByClassName('element3d');
+            for (let i = 0; i < y.length; i++) {
+              y[i].style.display='none';
+              
+
+              }
+}
+
+
+const modelViewerColor = document.querySelector("model-viewer#ana-color");
+                  
+            
+                  document.querySelector('#color-controls').addEventListener('click', (event) => {
+                    const colorString = event.target.dataset.color;
+                    const [material] = modelViewerColor.model.materials;
+                    material.pbrMetallicRoughness.setBaseColorFactor(colorString);
+                  });
+
+
+
+
+/*DVD BOUNCING*/
+
+let x = 0,
+  y = 0,
+  dirX = 1,
+  dirY = 1;
+const speed = 2;
+const pallete = ["#ff8800", "#e124ff", "#6a19ff", "#ff2188"];
+let dvd = document.getElementById("dvd");
+dvd.style.backgroundColor = pallete[0];
+let prevColorChoiceIndex = 0;
+let black = document.getElementById("black");
+const dvdWidth = dvd.clientWidth;
+const dvdHeight = dvd.clientHeight;
+
+function getNewRandomColor() {
+  const currentPallete = [...pallete]
+  currentPallete.splice(prevColorChoiceIndex,1)
+  const colorChoiceIndex = Math.floor(Math.random() * currentPallete.length);
+  prevColorChoiceIndex = colorChoiceIndex<prevColorChoiceIndex?colorChoiceIndex:colorChoiceIndex+1;
+  const colorChoice = currentPallete[colorChoiceIndex];
+  return colorChoice;
+}
+function animate() {
+  const screenHeight = document.body.clientHeight;
+  const screenWidth = document.body.clientWidth;
+
+  if (y + dvdHeight >= screenHeight || y < 0) {
+    dirY *= -1;
+    dvd.style.backgroundColor = getNewRandomColor();
+  }
+  if (x + dvdWidth >= screenWidth || x < 0) {
+    dirX *= -1;
+
+    dvd.style.backgroundColor = getNewRandomColor();
+  }
+  x += dirX * speed;
+  y += dirY * speed;
+  dvd.style.left = x + "px";
+  dvd.style.top = y + "px";
+  window.requestAnimationFrame(animate);
+}
+
+window.requestAnimationFrame(animate);
+
+
 </script>
