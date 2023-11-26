@@ -32,7 +32,7 @@
               
             </div>
             <div id="adu" class="element3d" style="display: none;">
-                <model-viewer src="assets/aditi/scene.gltf" alt="adu model" auto-rotate auto-rotate-delay="0" rotation-per-second="800%" interaction-prompt="none" environment-image="assets/purple.png"
+                <model-viewer src="assets/aditi/scene.gltf" alt="adu model" auto-rotate auto-rotate-delay="0" rotation-per-second="-800%" interaction-prompt="none" environment-image="assets/purple.png"
                 camera-controls ar ios-src="assets/aditi/scene.gltf">
                 </model-viewer>
             </div>
@@ -79,41 +79,52 @@
             <button onclick="showElement3D('afiq')">afiq</button>
             <button onclick="showElement3D('matin')">matin</button>
             <button onclick="showElement3D('nora')">nora</button>
-            <button onclick="showElement3D('yingjia')">ying jia</button>
+            <button onclick="showElement3D('yingjia')">yj</button>
             <button onclick="showElement3D('ross')">ross</button>
             <button onclick="showElement3D('nad')">nad</button>
 
           
             <div class="controls" id="color-controls">
-              <button data-color="rgb(185, 144, 197)" style="color: rgb(185, 144, 197);">color me</button>
-              <!-- <button data-color="#00ff00">invert me</button>
-              <button data-color="#0000ff">Blue</button> -->
+              
+            
             </div>
         </div>
 
         <div class="content" id="content-right">
             
-            <p>Boathouse Residences, <br> 29 Upper Serangoon View, <br> Singapore 534046
+            <p>Boathouse Residences
                 <br>
                 <br>
 
               
-                5:30 PM onwards
+                5:30 PM
+
+                <br>
+
+                <p style="font-size: 30px; line-height: 130%;">
+                  5:15-5:30 Be there
+                  <br>
+                  5:15-5:30 Don't be square
+                  <br>
+                  5:30-7:00 Eat up
+                  <br>
+                  7:00-9:00 Dirty down
+                  <br>
+                  9:00-12:00 See how
+                  <br>
+                  12:00-1:00 Get out
+  
+                </p>
+                
+              </p>
                 
                 <br>
                 <br>
-               
-               1. Potluck Dinz
-               <br>
-               2. Practice Round
-               <br>
-               3. Dirty Santa
-               <br>
-               4. See How
-               <br>
-               5. Go home
 
-                </p>
+              
+               
+               
+               
             <br><br>
             
         </div>
@@ -167,7 +178,7 @@ function changeBackground(idName){
   bg.style.background="linear-gradient(0deg, rgba(95,130,182,1) 0%, rgba(105,196,238,1) 14%, rgba(54,19,255,1) 24%, rgba(54,19,255,1) 33%, rgba(255,255,99,1) 35%, rgba(214,239,137,1) 40%, rgba(105,196,238,1) 46%, rgba(95,130,182,1) 55%, rgba(54,19,255,1) 64%, rgba(54,19,255,1) 67%, rgba(255,255,99,1) 70%, rgba(215,224,120,1) 73%, rgba(95,130,182,1) 78%, rgba(105,196,238,1) 85%, rgba(54,19,255,1) 91%, rgba(95,130,182,1) 95%)";
   }
 
-  else if (idName=='matin'){
+  else if (idName=='nad'){
     var bg=document.getElementById("container");
   bg.style.background="linear-gradient(0deg, rgba(164,202,104,1) 0%, rgba(230,147,95,1) 11%, rgba(220,103,85,1) 24%, rgba(164,202,104,1) 41%, rgba(223,140,66,1) 54%, rgba(233,197,82,1) 69%, rgba(224,105,87,1) 88%, rgba(164,202,104,1) 100%)";
   }
@@ -177,7 +188,7 @@ function changeBackground(idName){
   bg.style.background="linear-gradient(0deg, rgba(205,55,127,1) 0%, rgba(176,86,109,1) 15%, rgba(221,142,104,1) 31%, rgba(150,46,114,1) 46%, rgba(242,213,82,1) 66%, rgba(24,154,85,1) 84%, rgba(206,56,128,1) 100%)";
   }
 
-  else if (idName=='yingjia'){
+  else if (idName=='matin'){
     var bg=document.getElementById("container");
   bg.style.background="linear-gradient(0deg, rgba(3,91,201,1) 0, rgba(5,135,97,1) 12%, rgba(203,174,18,1) 27%, rgba(203,174,18,1) 32%, rgba(251,228,174,1) 35%, rgba(252,208,101,1) 47%, rgba(252,208,101,1) 54%, rgba(173,172,28,1) 65%, rgba(66,154,52,1) 73%, rgba(4,81,219,1) 81%, rgba(66,154,52,1) 90%, rgba(173,172,28,1) 99%)";
   }
@@ -187,7 +198,7 @@ function changeBackground(idName){
   bg.style.background="linear-gradient(0deg, rgba(189,162,91,1) 0%, rgba(0,173,174,1) 4%, rgba(13,174,162,1) 17%, rgba(35,179,37,1) 26%, rgba(39,180,23,1) 33%, rgba(128,189,86,1) 39%, rgba(203,214,83,1) 45%, rgba(191,171,90,1) 51%, rgba(189,162,91,1) 65%, rgba(0,173,174,1) 81%, rgba(194,222,161,1) 89%, rgba(219,228,159,1) 100%)";
   }
 
-  else if (idName=='nad'){
+  else if (idName=='yingjia'){
     var bg=document.getElementById("container");
   bg.style.background="linear-gradient(0deg, rgba(168,42,37,1) 0%, rgba(212,78,81,1) 8%, rgba(214,90,90,1) 16%, rgba(220,142,127,1) 31%, rgba(131,122,176,1) 38%, rgba(124,120,180,1) 44%, rgba(124,120,180,1) 49%, rgba(0,173,174,1) 58%, rgba(122,118,177,1) 65%, rgba(122,118,177,1) 74%, rgba(213,68,58,1) 87%, rgba(0,173,174,1) 99%)";
   }

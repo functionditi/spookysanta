@@ -204,6 +204,8 @@ background: linear-gradient(0deg, rgba(0,8,5,1) 2%, #209d59 14%, rgba(187,210,19
     background-repeat: no-repeat;
     background-size: 75px;
     background-position: center;
+    mix-blend-mode: exclusion;
+    
   }
 
 
