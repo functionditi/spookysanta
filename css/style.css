@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'GTF-Kosmos';
-    src: url("GTFKosmosTRIAL-Regular.otf") format("truetype");
+    src: url("PicNic-Regular.otf") format("truetype");
 }
 
 @font-face {
@@ -25,6 +25,13 @@
     
     
     color: rgb(0, 0, 0);
+    
+}
+
+body{
+    background: rgb(164,202,104);
+    background: linear-gradient(0deg, rgba(0,8,5,1) 2%, #209d59 14%, rgba(187,210,192,1) 31%, rgba(0,8,5,1) 44%, rgba(57,202,104,1) 53%, rgba(199,223,199,1) 63%, rgba(32,157,89,1) 76%, rgba(0,0,0,1) 86%, rgba(0,104,55,1) 99%);
+    overflow: hidden;
 }
 
 
@@ -34,9 +41,12 @@
     height: 100vh;
     width: 100%;
     position: relative;
-    /* background: rgb(41, 197, 33); */
-    background: rgb(164,202,104);
-background: linear-gradient(0deg, rgba(0,8,5,1) 2%, #209d59 14%, rgba(187,210,192,1) 31%, rgba(0,8,5,1) 44%, rgba(57,202,104,1) 53%, rgba(199,223,199,1) 63%, rgba(32,157,89,1) 76%, rgba(0,0,0,1) 86%, rgba(0,104,55,1) 99%);
+   
+    filter: blur(18px);
+   
+
+
+
 }
 
 
@@ -70,11 +80,11 @@ background: linear-gradient(0deg, rgba(0,8,5,1) 2%, #209d59 14%, rgba(187,210,19
 
 .content h2 {
     
-    font-size: 150px;
+    font-size: 160px;
     line-height: 90%;
-    color: transparent;
-    -webkit-text-stroke: 2px white;
-
+    color: whitesmoke;
+    /* -webkit-text-stroke: 3px white; */
+    mix-blend-mode: exclusion;
     
 }
 
@@ -197,15 +207,72 @@ background: linear-gradient(0deg, rgba(0,8,5,1) 2%, #209d59 14%, rgba(187,210,19
     position: absolute;
     left: 0px;
     top: 0px;
-    height: 100px;
-    width: 200px;
-    mask: url("https://upload.wikimedia.org/wikipedia/commons/9/9b/DVD_logo.svg");
-    -webkit-mask: url("https://upload.wikimedia.org/wikipedia/commons/9/9b/DVD_logo.svg");
+    height: auto;
+    width: 150px;
+    /* src: url(assets/gifts/GIFT-1-12.png); */
+    /* mask: url("https://upload.wikimedia.org/wikipedia/commons/9/9b/DVD_logo.svg");
+    -webkit-mask: url("https://upload.wikimedia.org/wikipedia/commons/9/9b/DVD_logo.svg"); */
     background-repeat: no-repeat;
     background-size: 75px;
     background-position: center;
-    mix-blend-mode: exclusion;
+    /* mix-blend-mode: exclusion; */
+   
     
   }
 
 
+  .splash{
+    cursor : pointer;
+    position : fixed;
+    top : 35%;
+    left : 50%;
+    height : 60%;
+    width : 60%;
+    transform : translate(-50%,-50%);    
+    background-color: transparent;
+    
+    transition : all ease-in-out 600ms;
+    
+    
+  }
+
+  .splash:hover{
+    filter: invert();
+    
+  }
+
+  .splash button{
+    font-family: 'Helvetica Narrow';
+    width: auto;
+    position: fixed;
+    top: 130%;
+    left:40%;
+    
+
+    padding: 2%;
+
+    /* padding: 3% 3% 3% 3%; */
+    font-size: 30px;
+    
+    border: none;
+   
+    outline: none;
+     border-radius: 10px; 
+    background-color: rgb(234, 35, 35);
+    /* mix-blend-mode: exclusion; */
+    color: rgb(255, 255, 255);
+  }
+
+  .splash button:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(234, 12, 12);
+  }
+
+  img{
+    width: 100%;
+    height:auto;
+  }
+
+  #title-image{
+    width: 120%;
+  }

@@ -69,7 +69,9 @@
         <!-- Content container -->
         <!-- This is for holding some brief description about the 3D object -->
         <div class="content" id="content-left">
-            <h2>SPOOKY SANTA</h2>
+            <!-- <h2>SPOOKY SANTA</h2> -->
+            <img id="title-image" src="./assets/splash-screen/ss-logo-test-22.png" alt="">
+            
             <br> <br>
             
 
@@ -83,16 +85,15 @@
             <button onclick="showElement3D('ross')">ross</button>
             <button onclick="showElement3D('nad')">nad</button>
 
-          
             <div class="controls" id="color-controls">
-              
+              <!-- <button data-color="rgb(236, 223, 247)" style="color: rgb(236, 223, 247);">colorme</button> -->
             
             </div>
         </div>
 
         <div class="content" id="content-right">
             
-            <p>Boathouse Residences
+            <p>The Boathouse
                 <br>
                 <br>
 
@@ -129,16 +130,40 @@
             
         </div>
 
-        <div id="dvd"></div>
+        <div id="dvd">
+          <img src="./assets/gifts/GIFT-1-12.png" alt="">
+        </div>
 
     </div>
+
+    <div class="splash">
+      <img src="./assets/splash-screen/ss-splash-transparent-20.png" alt="">
+      <button>
+        let's begin!
+      </button>
+    </div>
+   
 
     
 </body>
 
+
+
 </html>
 
 <script>
+
+var splashScreen = document.querySelector('.splash');
+splashScreen.addEventListener('click',()=>{
+  splashScreen.style.display = "none";
+  
+  var con=document.getElementById('container');
+  con.style.filter= "none";
+  // setTimeout(()=>{
+  //   splashScreen.classList.add('hidden')
+  // },610)
+})
+
 
 
 function showElement3D(idName) {
@@ -180,12 +205,12 @@ function changeBackground(idName){
 
   else if (idName=='nad'){
     var bg=document.getElementById("container");
-  bg.style.background="linear-gradient(0deg, rgba(164,202,104,1) 0%, rgba(230,147,95,1) 11%, rgba(220,103,85,1) 24%, rgba(164,202,104,1) 41%, rgba(223,140,66,1) 54%, rgba(233,197,82,1) 69%, rgba(224,105,87,1) 88%, rgba(164,202,104,1) 100%)";
+  bg.style.background="linear-gradient(0deg, rgba(242,100,70,1) 0%, rgba(89,98,75,1) 5%, rgba(38,97,77,1) 12%, rgba(95,135,115,1) 17%, rgba(253,241,221,1) 26%, rgba(74,127,101,1) 30%, rgba(38,104,77,1) 38%, rgba(86,108,77,1) 46%, rgba(214,118,76,1) 49%, rgba(229,113,55,1) 56%, rgba(253,241,221,1) 65%, rgba(190,200,180,1) 70%, rgba(38,101,80,1) 80%, rgba(22,89,59,1) 84%, rgba(217,109,58,1) 91%, rgba(186,77,46,1) 100%)";
   }
 
   else if (idName=='nora'){
     var bg=document.getElementById("container");
-  bg.style.background="linear-gradient(0deg, rgba(205,55,127,1) 0%, rgba(176,86,109,1) 15%, rgba(221,142,104,1) 31%, rgba(150,46,114,1) 46%, rgba(242,213,82,1) 66%, rgba(24,154,85,1) 84%, rgba(206,56,128,1) 100%)";
+  bg.style.background="linear-gradient(0deg, rgba(76,44,234,1) 0%, rgba(232,185,236,1) 9%, rgba(230,137,186,1) 12%, rgba(230,137,186,1) 25%, rgba(105,98,232,1) 31%, rgba(208,171,220,1) 40%, rgba(69,86,255,1) 50%, rgba(101,96,241,1) 55%, rgba(236,165,202,1) 60%, rgba(109,54,230,1) 64%, rgba(69,26,245,1) 72%, rgba(144,87,238,1) 81%, rgba(232,159,229,1) 88%, rgba(20,25,235,1) 100%)";
   }
 
   else if (idName=='matin'){
@@ -200,7 +225,7 @@ function changeBackground(idName){
 
   else if (idName=='yingjia'){
     var bg=document.getElementById("container");
-  bg.style.background="linear-gradient(0deg, rgba(168,42,37,1) 0%, rgba(212,78,81,1) 8%, rgba(214,90,90,1) 16%, rgba(220,142,127,1) 31%, rgba(131,122,176,1) 38%, rgba(124,120,180,1) 44%, rgba(124,120,180,1) 49%, rgba(0,173,174,1) 58%, rgba(122,118,177,1) 65%, rgba(122,118,177,1) 74%, rgba(213,68,58,1) 87%, rgba(0,173,174,1) 99%)";
+  bg.style.background="linear-gradient(0deg, rgba(187,228,229,1) 0%, rgba(214,239,239,1) 12%, rgba(173,238,238,1) 18%, rgba(137,198,229,1) 25%, rgba(61,156,221,1) 35%, rgba(34,141,211,1) 45%, rgba(205,243,244,1) 52%, rgba(71,175,206,1) 58%, rgba(115,214,218,1) 68%, rgba(207,237,238,1) 76%, rgba(92,175,217,1) 86%, rgba(27,20,100,1) 99%)";
   }
   
  
@@ -238,32 +263,32 @@ let x = 0,
 const speed = 2;
 const pallete = ["#ff8800", "#e124ff", "#6a19ff", "#ff2188"];
 let dvd = document.getElementById("dvd");
-dvd.style.backgroundColor = pallete[0];
-let prevColorChoiceIndex = 0;
+// dvd.style.backgroundColor = pallete[0];
+// let prevColorChoiceIndex = 0;
 let black = document.getElementById("black");
 const dvdWidth = dvd.clientWidth;
 const dvdHeight = dvd.clientHeight;
 
-function getNewRandomColor() {
-  const currentPallete = [...pallete]
-  currentPallete.splice(prevColorChoiceIndex,1)
-  const colorChoiceIndex = Math.floor(Math.random() * currentPallete.length);
-  prevColorChoiceIndex = colorChoiceIndex<prevColorChoiceIndex?colorChoiceIndex:colorChoiceIndex+1;
-  const colorChoice = currentPallete[colorChoiceIndex];
-  return colorChoice;
-}
+// function getNewRandomColor() {
+//   const currentPallete = [...pallete]
+//   currentPallete.splice(prevColorChoiceIndex,1)
+//   const colorChoiceIndex = Math.floor(Math.random() * currentPallete.length);
+//   prevColorChoiceIndex = colorChoiceIndex<prevColorChoiceIndex?colorChoiceIndex:colorChoiceIndex+1;
+//   const colorChoice = currentPallete[colorChoiceIndex];
+//   return colorChoice;
+// }
 function animate() {
   const screenHeight = document.body.clientHeight;
   const screenWidth = document.body.clientWidth;
 
   if (y + dvdHeight >= screenHeight || y < 0) {
     dirY *= -1;
-    dvd.style.backgroundColor = getNewRandomColor();
+    // dvd.style.backgroundColor = getNewRandomColor();
   }
   if (x + dvdWidth >= screenWidth || x < 0) {
     dirX *= -1;
 
-    dvd.style.backgroundColor = getNewRandomColor();
+    // dvd.style.backgroundColor = getNewRandomColor();
   }
   x += dirX * speed;
   y += dirY * speed;
