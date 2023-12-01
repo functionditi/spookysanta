@@ -7,13 +7,14 @@
 
 @font-face {
     font-family: 'Helvetica Narrow';
-    src: url("VTF victorianna thin.otf") format("truetype");
+    src: url("Mister Pixel Regular.otf") format("truetype");
 }
 
 @font-face {
     font-family: 'Victorianna';
-    src: url("VTF victorianna thin.otf") format("truetype");
+    src: url("Mister Pixel Regular.otf") format("truetype");
 }
+
 
 
 
@@ -73,6 +74,7 @@ body{
     padding: 4rem;
     margin: 0%;
     
+
 }
 
 
@@ -84,7 +86,7 @@ body{
     line-height: 90%;
     color: whitesmoke;
     /* -webkit-text-stroke: 3px white; */
-    mix-blend-mode: exclusion;
+    /* mix-blend-mode: exclusion; */
     
 }
 
@@ -93,22 +95,40 @@ body{
 
 #content-left p {
     font-size: 20px;
-    font-family: 'Helvetica Narrow';
+    font-family: 'Victorianna';
     color: rgb(250, 250, 250);
 }
 
 #content-right p {
+    
     background-color: #fff;
     border-color: black;
     border-width: 2rem;
     border-radius: 20px;
-    mix-blend-mode: exclusion;
+   
     padding: 20px;
     font-size: 50px;
-    line-height: 110%;
+    
     font-family: 'Victorianna';
+    color: rgb(0, 0, 0); 
+    
+  
+    /* mix-blend-mode: exclusion; */
     color: black;
+    box-shadow: 0 0 10px 10px #ff0000;
+
+
+    
 }
+
+#content-right p:hover{
+    mix-blend-mode: normal;
+}
+
+#instructions{
+    font-family: 'Helvetica Narrow';
+}
+
 
 
 /* This styles the button in the 3D description*/
@@ -129,10 +149,10 @@ body{
 } */
 
 .content button {
-    font-family: 'Helvetica Narrow';
+    font-family: 'Victorianna';
     width: auto;
     padding: 3% 3% 3% 3%;
-    font-size: 50px;
+    font-size: 40px;
     margin-top: 2%;
     margin-right: 0%;
     margin-left: center;
@@ -143,6 +163,7 @@ body{
     background-color: white;
     mix-blend-mode: exclusion;
     color: black;
+    box-shadow: 0 0 10px 10px #ff0000;
 }
 
 /* .content button {
@@ -208,7 +229,7 @@ body{
     left: 0px;
     top: 0px;
     height: auto;
-    width: 150px;
+    width: 10%;
     /* src: url(assets/gifts/GIFT-1-12.png); */
     /* mask: url("https://upload.wikimedia.org/wikipedia/commons/9/9b/DVD_logo.svg");
     -webkit-mask: url("https://upload.wikimedia.org/wikipedia/commons/9/9b/DVD_logo.svg"); */
@@ -219,6 +240,12 @@ body{
    
     
   }
+
+  #g-nora{
+    width: 220%;
+    height: auto;
+  }
+
 
 
   .splash{
@@ -242,11 +269,11 @@ body{
   }
 
   .splash button{
-    font-family: 'Helvetica Narrow';
-    width: auto;
+    font-family: 'Victorianna';
+    width: 400px;
     position: fixed;
-    top: 130%;
-    left:40%;
+    top: 135%;
+    left:27%;
     
 
     padding: 2%;
@@ -258,15 +285,15 @@ body{
    
     outline: none;
      border-radius: 10px; 
-    background-color: rgb(234, 35, 35);
+    background-color: transparent;
     /* mix-blend-mode: exclusion; */
     color: rgb(255, 255, 255);
   }
 
-  .splash button:hover{
+  /* .splash button:hover{
     background: rgb(255, 255, 255);
     color: rgb(234, 12, 12);
-  }
+  } */
 
   img{
     width: 100%;
@@ -274,5 +301,89 @@ body{
   }
 
   #title-image{
-    width: 120%;
+    width: 110%;
+    /* mix-blend-mode: difference; */
+  }
+
+
+  table{
+    border: #fff;
+   
+    /* empty-cells: show; */
+
+  }
+  td{
+    /* background: #fff; */
+   color: transparent;
+   border-radius:5px;
+   border-width: 5px;
+    text-align: left;
+background-color: #fff;
+   
+    box-shadow: 0 0 10px 1px #00d9ff;
+
+  }
+  #table-text{
+    color: rgb(0, 0, 0);
+    font-family: 'Victorianna';
+    padding: 5%;
+    font-size: 12px;
+    vertical-align: top;
+    /* border-radius: 40px; */
+    /* background-color: rgb(160, 160, 160); */
+    background-color: white;
+    opacity: 70%;
+   
+   
+  }
+
+  #table-para{
+    font-family: 'Victorianna';
+    color: black;
+    font-size: 15px;
+    line-height: 120%;
+    padding: 2%;
+    background-color: white;
+    border-radius: 6px;
+  }
+
+  .blended-cells{
+    mix-blend-mode: exclusion;
+  }
+
+  #initiative{
+    display: block;
+  }
+
+  #initiative:hover{
+    mix-blend-mode: exclusion;
+  }
+
+
+
+  #manifesto{
+    position : fixed;
+    top : 50%;
+    left : 50%;
+    height : 60%;
+    width : 60%;
+    transform : translate(-50%,-50%);    
+    background-color: black;
+    display: none;
+
+    background-color: #fff;
+    border-color: black;
+    border-width: 2rem;
+    border-radius: 30px;
+   
+    padding: 20px;
+    font-size: 50px;
+    
+    font-family: 'Victorianna';
+    color: rgb(0, 0, 0); 
+    
+    opacity: 70%;
+    /* mix-blend-mode: exclusion; */
+    color: black;
+    box-shadow: 0 0 10px 10px #ff0000;
   }

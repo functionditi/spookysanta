@@ -37,29 +37,30 @@
                 </model-viewer>
             </div>
             <div id="afiq" class="element3d" style="display: none;">
-              <model-viewer src="assets/skeleton/scene.gltf" alt="afiq model" auto-rotate camera-controls ar ios-src="assets/skeleton/scene.gltf">
+              <model-viewer src="assets/skeleton/scene.gltf" alt="afiq model" auto-rotate auto-rotate-delay="0" rotation-per-second="800%" interaction-prompt="none"  camera-controls ar ios-src="assets/skeleton/scene.gltf">
               </model-viewer>
             </div>
             <div id="matin" class="element3d" style="display: none;">
-                <model-viewer src="assets/muscle/scene.gltf" alt="matin model" auto-rotate camera-controls ar ios-src="assets/muscle/scene.gltf">
+                <model-viewer src="assets/muscle/scene.gltf" alt="matin model" auto-rotate auto-rotate-delay="0" rotation-per-second="800%" interaction-prompt="none"  camera-controls ar ios-src="assets/muscle/scene.gltf">
                 </model-viewer>
             </div>
             <div id="nora" class="element3d" style="display: none;">
-              <model-viewer src="assets/skeleton/scene.gltf" alt="ana model" auto-rotate camera-controls ar ios-src="assets/skeleton/scene.gltf">
+              <model-viewer src="assets/skeleton/scene.gltf" alt="ana model" auto-rotate auto-rotate-delay="0" rotation-per-second="800%" interaction-prompt="none"  camera-controls ar ios-src="assets/skeleton/scene.gltf">
               </model-viewer>
           </div>
           <div id="yingjia" class="element3d" style="display: none;">
-              <model-viewer src="assets/muscle/scene.gltf" alt="adu model" auto-rotate camera-controls ar ios-src="assets/muscle/scene.gltf">
+              <model-viewer src="assets/muscle/scene.gltf" alt="adu model" auto-rotate auto-rotate-delay="0" rotation-per-second="800%" interaction-prompt="none"  camera-controls ar ios-src="assets/muscle/scene.gltf">
               </model-viewer>
           </div>
           <div id="ross" class="element3d" style="display: none;">
-            <model-viewer src="assets/skeleton/scene.gltf" alt="afiq model" auto-rotate camera-controls ar ios-src="assets/skeleton/scene.gltf">
+            <model-viewer src="assets/skeleton/scene.gltf" alt="afiq model" auto-rotate auto-rotate-delay="0" rotation-per-second="800%" interaction-prompt="none"  camera-controls ar ios-src="assets/skeleton/scene.gltf">
             </model-viewer>
           </div>
           <div id="nad" class="element3d" style="display: none;">
-              <model-viewer src="assets/muscle/scene.gltf" alt="matin model" auto-rotate camera-controls ar ios-src="assets/muscle/scene.gltf">
+              <model-viewer src="assets/muscle/scene.gltf" alt="matin model" auto-rotate auto-rotate-delay="0" rotation-per-second="800%" interaction-prompt="none"  camera-controls ar ios-src="assets/muscle/scene.gltf">
               </model-viewer>
           </div>
+          
              
              
         </div>
@@ -70,68 +71,134 @@
         <!-- This is for holding some brief description about the 3D object -->
         <div class="content" id="content-left">
             <!-- <h2>SPOOKY SANTA</h2> -->
-            <img id="title-image" src="./assets/splash-screen/ss-logo-test-22.png" alt="">
+            <img id="title-image" src="./assets/logo/SS-LOGO.png" alt="">
             
             <br> <br>
             
 
 
-            <button onclick="showElement3D('ana')">ana</button>
-            <button onclick="showElement3D('adu')">adu</button>
-            <button onclick="showElement3D('afiq')">afiq</button>
-            <button onclick="showElement3D('matin')">matin</button>
-            <button onclick="showElement3D('nora')">nora</button>
-            <button onclick="showElement3D('yingjia')">yj</button>
-            <button onclick="showElement3D('ross')">ross</button>
-            <button onclick="showElement3D('nad')">nad</button>
+            <button onclick="showElement3D('ana', 'g-ana')">ana</button>
+            <button onclick="showElement3D('adu', 'g-adu')">adu</button>
+            <button onclick="showElement3D('afiq', 'g-afiq')">afiq</button>
+            <button onclick="showElement3D('matin', 'g-mat')">matin</button>
+            <button onclick="showElement3D('nora', 'g-nora')">nora</button>
+            <button onclick="showElement3D('yingjia', 'g-yj')">yj</button>
+            <button onclick="showElement3D('ross', 'g-yj')">ross</button>
+            <button onclick="showElement3D('nad', 'g-nad')">nad</button>
 
             <div class="controls" id="color-controls">
-              <!-- <button data-color="rgb(236, 223, 247)" style="color: rgb(236, 223, 247);">colorme</button> -->
-            
+              <!-- <button data-color="rgb(236, 223, 247)" style="color: rgb(236, 223, 247);">colorme</button>
+             -->
             </div>
+
+
+            <table id="initiative" style="padding-top: 12rem;">
+             
+               <tr class="blended-cells">
+                 <td>@</td>
+                 <td>@</td>
+                 <td>@</td>
+                 <td>@</td>
+                 <td>@</td>
+                 <td>@</td>
+                 <td>@</td>
+                 <td>@</td>
+                 <td>@</td>
+                 <td>@</td>
+                 <td>@</td>
+                 <td>@</td>
+                 <td>@</td>
+                 <td>@</td>
+                 <td>@</td>
+                 <td>@</td>
+          
+                </tr>
+
+                <tr>
+                  <td class="blended-cells">@</td>
+                 
+                  <td colspan="14" rowspan="2" id="table-text"> 
+                    <div id="table-para">
+                      An initiative by <br>
+                      functionditi x anaslara
+                    </div> 
+                  </td>
+                 
+                  <td class="blended-cells">@</td>
+                 </tr>
+
+                 <tr>
+                  <td class="blended-cells">@</td>
+                  <td class="blended-cells">@</td>
+
+                 </tr>
+
+                 <tr class="blended-cells">
+                  <td>@</td>
+                  <td>@</td>
+                  <td>@</td>
+                  <td>@</td>
+                  <td>@</td>
+                  <td>@</td>
+                  <td>@</td>
+                  <td>@</td>
+                  <td>@</td>
+                  <td>@</td>
+                  <td>@</td>
+                  <td>@</td>
+                  <td>@</td>
+                  <td>@</td>
+                  <td>@</td>
+                  <td>@</td>
+           
+                 </tr>
+                
+            </table>
         </div>
 
         <div class="content" id="content-right">
             
-            <p>The Boathouse
-                <br>
-                <br>
+        
+          <table id="first-row-section">
+              <!-- <div id="first-row-section">
 
-              
-                5:30 PM
+              </div> -->
+          </table>
 
-                <br>
+          <br>
+          <p id="instructions" style="font-size: 15px; line-height: 130%; opacity: 80%; font-family: 'Helvetica Narrow';">
+          
+           1. Rotate? Drag with one finger.
+          
+           2. Move? Drag with two fingers.
+          
+           3. Zoom? In and out with two fingers.
 
-                <p style="font-size: 30px; line-height: 130%;">
-                  5:15-5:30 Be there
-                  <br>
-                  5:15-5:30 Don't be square
-                  <br>
-                  5:30-7:00 Eat up
-                  <br>
-                  7:00-9:00 Dirty down
-                  <br>
-                  9:00-12:00 See how
-                  <br>
-                  12:00-1:00 Get out
-  
-                </p>
-                
-              </p>
-                
-                <br>
-                <br>
+           4. Wanna stack everybody and make it a party? Click the stack button. 
+           
+           5. Gosh I love this project. It's so stupid.
 
-              
-               
-               
-               
-            <br><br>
+           6. Have the most fun! 
+          </p>
+            
+             
+                 
             
         </div>
 
         <div id="dvd">
-          <img src="./assets/gifts/GIFT-1-12.png" alt="">
+          <img src="./assets/gifts/SS-GIFT-13.png" alt="" id="g-ana" class="gift-box">
+          <img src="./assets/gifts/SS-GIFT-14.png" alt="" style="display: none;" id="g-adu" class="gift-box">
+          <img src="./assets/gifts/SS-GIFT-15.png" alt="" style="display: none;" id="g-nora" class="gift-box">
+          <img src="./assets/gifts/SS-GIFT-16.png" alt="" style="display: none;" id="g-mat" class="gift-box">
+          <img src="./assets/gifts/SS-GIFT-17.png" alt="" style="display: none;" id="g-afiq" class="gift-box">
+          <img src="./assets/gifts/SS-GIFT-18.png" alt="" style="display: none;" id="g-yj" class="gift-box">
+          <img src="./assets/gifts/SS-GIFT-19.png" alt="" style="display: none;" id="g-ross" class="gift-box">
+          <img src="./assets/gifts/SS-GIFT-20.png" alt="" style="display: none;" id="g-nad" class="gift-box">
+
+       
+
+
         </div>
 
     </div>
@@ -139,8 +206,18 @@
     <div class="splash">
       <img src="./assets/splash-screen/ss-splash-transparent-20.png" alt="">
       <button>
-        let's begin!
+        <!-- START NOW -->
+        <img src="./assets/START-22.png" alt="">
       </button>
+    </div>
+
+    <div id="manifesto">
+
+      This will be a really profound statement about the value of documentation. Love is attention? Love is spotlighting? Love is messing around with a 3d scanner app and getting fucked-up faces for fun!
+
+      <br>
+      <br><br>
+      Click anywhere to go back.
     </div>
    
 
@@ -152,6 +229,73 @@
 </html>
 
 <script>
+
+  var table_row_1="", i;
+  for (let i=0; i<2; i++){
+    table_row_1+=`<tr class="blended-cells"> 
+      <td>@@@</td>
+      <td>@@@</td>
+      <td>@@@</td>
+      <td>@@@</td>
+      <td>@@@</td>
+      <td>@@@</td> 
+      <td>@@@</td>
+      <td>@@@</td>
+      <td>@@@</td>
+      <td>@@@</td>
+      <td>@@@</td>
+      </tr>
+      `;
+  }
+
+
+  table_row_1+=`
+  <tr>
+      <td class="blended-cells">@@@</td>
+      <td class="blended-cells">@@@</td>
+      <td colspan="7" rowspan="24" id="table-text"> 
+        
+        <img src="./assets/RIGHT-TEXT-23.png">
+
+        
+      </td>
+      <td class="blended-cells">@@@</td>
+      <td class="blended-cells">@@@</td>
+     </tr>
+  `;
+
+  for (i=0; i<23; i++){
+    table_row_1+=`
+  <tr class="blended-cells">
+      <td>@@@</td>
+      <td>@@@</td>
+      <td>@@@</td>
+      <td>@@@</td>
+     </tr>
+  `;
+  }
+
+  
+  for (let i=0; i<2; i++){
+    table_row_1+=`<tr class="blended-cells"> 
+      <td>@@@</td>
+      <td>@@@</td>
+      <td>@@@</td>
+      <td>@@@</td>
+      <td>@@@</td>
+      <td>@@@</td> 
+      <td>@@@</td>
+      <td>@@@</td>
+      <td>@@@</td>
+      <td>@@@</td>
+      <td>@@@</td>
+      </tr>
+      `;
+  }
+
+  document.getElementById("first-row-section").innerHTML = table_row_1;
+
+  
 
 var splashScreen = document.querySelector('.splash');
 splashScreen.addEventListener('click',()=>{
@@ -165,8 +309,27 @@ splashScreen.addEventListener('click',()=>{
 })
 
 
+var initiativeBy = document.querySelector('#initiative');
+initiativeBy.addEventListener('click',()=>{
+  var man=document.getElementById('manifesto');
+  man.style.display="block";
+  var con=document.getElementById('container');
+  con.style.filter= "blur(16px)";
+})
 
-function showElement3D(idName) {
+var manifestoBlock=document.querySelector('#manifesto');
+manifestoBlock.addEventListener('click',()=>{
+  var man=document.getElementById('manifesto');
+  man.style.display="none";
+  var con=document.getElementById('container');
+  con.style.filter= "none";
+})
+
+
+
+
+
+function showElement3D(idName, g_name) {
 
   if (idName!='all') {
 
@@ -177,6 +340,13 @@ function showElement3D(idName) {
      x.style.display = "block";
    } else {
      x.style.display = "none";
+   }
+
+   var g=document.getElementById(g_name);
+   if (g.style.display === "none") {
+     g.style.display = "block";
+   } else {
+     g.style.display = "none";
    }
  
    changeBackground(idName);
@@ -194,8 +364,10 @@ function changeBackground(idName){
   }
 
   else if (idName=='adu'){
+   
     var bg=document.getElementById("container");
   bg.style.background="linear-gradient(0deg, rgba(53,4,130,1) 0%, rgba(195,124,84,1) 12%, rgba(223,148,75,1) 18%, rgba(177,196,52,1) 23%, rgba(138,170,0,1) 35%, rgba(124,112,66,1) 44%, rgba(104,26,166,1) 50%, rgba(161,78,157,1) 68%, rgba(223,135,71,1) 72%, rgba(190,205,17,1) 76%, rgba(138,170,0,1) 88%, rgba(101,153,28,1) 92%, rgba(84,76,116,1) 98%, rgba(74,30,169,1) 100%)";
+
   }
 
   else if (idName=='afiq'){
@@ -237,8 +409,13 @@ function hideTheRest(){
             for (let i = 0; i < y.length; i++) {
               y[i].style.display='none';
               
-
               }
+  var z=document.getElementsByClassName('gift-box');
+for (let i = 0; i < z.length; i++) {
+  z[i].style.display='none';
+  
+  }
+
 }
 
 
