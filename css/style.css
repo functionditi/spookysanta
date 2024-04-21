@@ -45,9 +45,6 @@ body{
    
     filter: blur(18px);
    
-
-
-
 }
 
 
@@ -116,7 +113,6 @@ body{
     /* mix-blend-mode: exclusion; */
     color: black;
     box-shadow: 0 0 10px 10px #ff0000;
-
 
     
 }
@@ -387,3 +383,75 @@ background-color: #fff;
     color: black;
     box-shadow: 0 0 10px 10px #ff0000;
   }
+
+
+  @media screen and (max-width: 768px) {
+    /* CSS rules for smaller screens */
+
+    body{
+     
+      overflow: auto;
+  }
+    
+    #dvd {
+      display: none;
+    }
+
+    #aSide{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0px;
+    }
+
+
+
+    #title-image{
+     
+      width: 180%;
+    }
+
+    #initiative{
+      display: none;
+    }
+
+
+    #name-menu{
+      display: none;
+    }
+
+    #content-right {
+    display: none;
+    
+      left: 0%;
+     
+      width: 27.5%;
+      height: 100%;
+      position:unset;
+      padding: 4rem;
+      margin: 0%;
+      
+  
+  }
+
+  .splash{
+    cursor : pointer;
+    position : fixed;
+    top : 55%;
+    left : 50%;
+    height : 60%;
+    width : 100%;
+    transform : translate(-50%,-50%);    
+    background-color: transparent;
+    
+    transition : all ease-in-out 600ms;
+    
+    
+  }
+
+  #splash-button{
+    display: none;
+  }
+
+    
+}

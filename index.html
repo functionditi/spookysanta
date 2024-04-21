@@ -11,6 +11,8 @@
     <!--It helps to handle how the 3D Object would be displayed -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
@@ -37,7 +39,7 @@
                 </model-viewer>
             </div>
             <div id="afiq" class="element3d" style="display: none;">
-              <model-viewer src="assets/skeleton/scene.gltf" alt="afiq model" auto-rotate auto-rotate-delay="0" rotation-per-second="800%" interaction-prompt="none"  camera-controls ar ios-src="assets/skeleton/scene.gltf">
+              <model-viewer src="assets/afiq/scene.gltf" alt="afiq model" auto-rotate auto-rotate-delay="0" rotation-per-second="800%" interaction-prompt="none"  camera-controls ar ios-src="assets/afiq/scene.gltf">
               </model-viewer>
             </div>
             <div id="matin" class="element3d" style="display: none;">
@@ -45,19 +47,19 @@
                 </model-viewer>
             </div>
             <div id="nora" class="element3d" style="display: none;">
-              <model-viewer src="assets/skeleton/scene.gltf" alt="ana model" auto-rotate auto-rotate-delay="0" rotation-per-second="800%" interaction-prompt="none"  camera-controls ar ios-src="assets/skeleton/scene.gltf">
+              <model-viewer src="assets/nora/scene.gltf" alt="nora model" auto-rotate auto-rotate-delay="0" rotation-per-second="800%" interaction-prompt="none"  camera-controls ar ios-src="assets/nora/scene.gltf">
               </model-viewer>
           </div>
           <div id="yingjia" class="element3d" style="display: none;">
-              <model-viewer src="assets/muscle/scene.gltf" alt="adu model" auto-rotate auto-rotate-delay="0" rotation-per-second="800%" interaction-prompt="none"  camera-controls ar ios-src="assets/muscle/scene.gltf">
+              <model-viewer src="assets/yj/scene.gltf" alt="yj model" auto-rotate auto-rotate-delay="0" rotation-per-second="800%" interaction-prompt="none"  camera-controls ar ios-src="assets/yj/scene.gltf">
               </model-viewer>
           </div>
           <div id="ross" class="element3d" style="display: none;">
-            <model-viewer src="assets/skeleton/scene.gltf" alt="afiq model" auto-rotate auto-rotate-delay="0" rotation-per-second="800%" interaction-prompt="none"  camera-controls ar ios-src="assets/skeleton/scene.gltf">
+            <model-viewer src="assets/ross/scene.gltf" alt="ross model" auto-rotate auto-rotate-delay="0" rotation-per-second="800%" interaction-prompt="none"  camera-controls ar ios-src="assets/ross/scene.gltf">
             </model-viewer>
           </div>
           <div id="nad" class="element3d" style="display: none;">
-              <model-viewer src="assets/muscle/scene.gltf" alt="matin model" auto-rotate auto-rotate-delay="0" rotation-per-second="800%" interaction-prompt="none"  camera-controls ar ios-src="assets/muscle/scene.gltf">
+              <model-viewer src="assets/nad/scene.gltf" alt="nad model" auto-rotate auto-rotate-delay="0" rotation-per-second="800%" interaction-prompt="none"  camera-controls ar ios-src="assets/nad/scene.gltf">
               </model-viewer>
           </div>
           
@@ -72,10 +74,11 @@
         <div class="content" id="content-left">
             <!-- <h2>SPOOKY SANTA</h2> -->
             <img id="title-image" src="./assets/logo/SS-LOGO.png" alt="">
+          
             
             <br> <br>
             
-
+            <section id="name-menu">
 
             <button onclick="showElement3D('ana', 'g-ana')">ana</button>
             <button onclick="showElement3D('adu', 'g-adu')">adu</button>
@@ -85,6 +88,8 @@
             <button onclick="showElement3D('yingjia', 'g-yj')">yj</button>
             <button onclick="showElement3D('ross', 'g-ross')">ross</button>
             <button onclick="showElement3D('nad', 'g-nad')">nad</button>
+
+          </section>
 
             <div class="controls" id="color-controls">
               <!-- <button data-color="rgb(236, 223, 247)" style="color: rgb(236, 223, 247);">colorme</button>
