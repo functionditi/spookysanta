@@ -392,7 +392,8 @@ background-color: #fff;
      
       overflow: auto;
       height: 200vh;
-      width: 100%;
+      width: 100vw; /* Viewport width */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
   }
     
     #dvd {
