@@ -459,6 +459,7 @@ background-color: #fff;
   #blended-cells{
     font-size: 1px;
     width: 80%;
+    mix-blend-mode: exclusion;
   }
 
   #first-row-section{
