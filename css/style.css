@@ -390,6 +390,10 @@ background-color: #fff;
     box-shadow: 0 0 10px 10px #ff0000;
   }
 
+  #hamburger{
+    display: none;
+  }
+
 
   @media screen and (max-width: 768px) {
     /* CSS rules for smaller screens */
@@ -397,7 +401,7 @@ background-color: #fff;
     body{
      
       overflow: auto;
-      height: 200vh;
+      /* height: 200vh; */
       width: 100vw; /* Viewport width */
     overflow-x: hidden; /* Hide horizontal scrollbar */
   }
@@ -435,9 +439,9 @@ background-color: #fff;
       left: 0%;
       top: 100vh;
       width: 100vw;
-      height: 100vh;
+      /* height: 100vh; */
       position:relative;
-      padding: 0rem;
+      padding: 1%;
       margin: 0%;
       
   
@@ -475,6 +479,22 @@ background-color: #fff;
 
   td{
     font-size: 0.9rem;
+  }
+
+  #instructions{
+    display: none;
+  }
+
+  #hamburger{
+    display:block;
+    left: 75vw;
+    top: 5vh;
+   
+    position: absolute;
+   
+    margin: 0%;
+    padding: 4% 10%;
+    
   }
 
   

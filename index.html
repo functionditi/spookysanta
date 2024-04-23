@@ -28,7 +28,7 @@
             <!-- This inserts the 3D object inside the aside container -->
             <div id="ana" class="element3d">
                 <model-viewer  id="ana-color"  src="assets/ana/scene.gltf" alt="ana model" auto-rotate auto-rotate-delay="0" rotation-per-second="800%" interaction-prompt="none" environment-image="assets/bggrad-1.png"
-                camera-controls touch-action ar ios-src="assets/ana/scene.gltf">
+                 touch-action ar ios-src="assets/ana/scene.gltf">
           
                 </model-viewer>
               
@@ -75,7 +75,7 @@
             <!-- <h2>SPOOKY SANTA</h2> -->
             <img id="title-image" src="./assets/logo/SS-LOGO.png" alt="">
           
-            
+            <button id="hamburger" onclick="showBurgerMenu()"> +</button>
             <br> <br>
             
             <section id="name-menu">
@@ -336,6 +336,17 @@ manifestoBlock.addEventListener('click',()=>{
 })
 
 
+function showBurgerMenu() {
+  var x = document.getElementById('name-menu');
+  var computedStyle = window.getComputedStyle(x);
+
+  if (computedStyle.display === "none") {
+    x.style.display = "block";
+    console.log("hi");
+  }
+
+  
+}
 
 
 
@@ -361,9 +372,7 @@ function showElement3D(idName, g_name) {
  
    changeBackground(idName);
   }
- 
 
-  
 }
 
 function changeBackground(idName){
