@@ -78,7 +78,7 @@
             <button id="hamburger" onclick="showBurgerMenu()"> +</button>
             <br> <br>
             
-            <section id="name-menu">
+            <div id="name-menu">
 
             <button onclick="showElement3D('ana', 'g-ana')">ana</button>
             <button onclick="showElement3D('adu', 'g-adu')">adu</button>
@@ -89,7 +89,9 @@
             <button onclick="showElement3D('ross', 'g-ross')">ross</button>
             <button onclick="showElement3D('nad', 'g-nad')">nad</button>
 
-          </section>
+            </div>
+
+          
 
             <div class="controls" id="color-controls">
               <!-- <button data-color="rgb(236, 223, 247)" style="color: rgb(236, 223, 247);">colorme</button>
@@ -341,9 +343,35 @@ function showBurgerMenu() {
   var computedStyle = window.getComputedStyle(x);
 
   if (computedStyle.display === "none") {
-    x.style.display = "block";
-    console.log("hi");
+    x.style.display = "flex";
+    
+    var title_img=document.getElementById('title-image');
+  title_img.style.filter= "blur(16px)";
+
+  var mod=document.getElementById('aSide');
+  mod.style.filter= "blur(16px)";
+
+  var con=document.getElementById('container');
+  con.style.backdropFilter="blur(16px)";
   }
+  else {
+     x.style.display = "none";
+
+     var title_img=document.getElementById('title-image');
+  title_img.style.filter= "none";
+
+  var mod=document.getElementById('aSide');
+  mod.style.filter= "none";
+
+  var con=document.getElementById('container');
+  con.style.backdropFilter="none";
+   }
+
+  x.style.opacity="70%"
+
+
+
+
 
   
 }
@@ -371,6 +399,7 @@ function showElement3D(idName, g_name) {
    }
  
    changeBackground(idName);
+   showBurgerMenu();
   }
 
 }

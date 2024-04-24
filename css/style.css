@@ -395,6 +395,7 @@ background-color: #fff;
   }
 
 
+
   @media screen and (max-width: 768px) {
     /* CSS rules for smaller screens */
 
@@ -417,6 +418,7 @@ background-color: #fff;
       top: 0px;
     }
 
+    
 
 
     #title-image{
@@ -431,6 +433,19 @@ background-color: #fff;
 
     #name-menu{
       display: none;
+      width: 100vw;
+      
+      flex-direction: column;
+  justify-content: center;
+  align-items: center;
+padding: 0px;
+margin: 0px;
+
+    }
+
+    #name-menu button {
+      padding: 5px 20px;
+      margin: 10px 5px; /* Optional: Add some spacing between buttons */
     }
 
     #content-right {
