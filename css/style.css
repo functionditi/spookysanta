@@ -401,8 +401,8 @@ background-color: #fff;
 
     body{
      
-      overflow: auto;
-      /* height: 200vh; */
+      overflow:hidden;
+      height: 100vh;
       width: 100vw; /* Viewport width */
     overflow-x: hidden; /* Hide horizontal scrollbar */
   }
@@ -424,6 +424,7 @@ background-color: #fff;
     #title-image{
      
       width: 160%;
+      padding: 25%;
     }
 
     #initiative{
@@ -445,7 +446,11 @@ margin: 0px;
 
     #name-menu button {
       padding: 5px 20px;
-      margin: 10px 5px; /* Optional: Add some spacing between buttons */
+      margin: 10px 5px; 
+    }
+
+    #content-left{
+      padding: 0px;
     }
 
     #content-right {
@@ -506,7 +511,7 @@ margin: 0px;
     top: 4vh;
    
     position: absolute;
-   width: 30%;
+   width: 50%;
 
    /* box-shadow: 0 0 10px 10px #ff0000; */
    box-shadow: 0 0 10px 1px #00d9ff;
