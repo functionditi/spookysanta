@@ -79,6 +79,11 @@
 
             <img src="./assets/buttons/Burger-11.png" id="hamburger" onclick="showBurgerMenu()">
             <br> <br>
+
+            <img src="./assets/buttons/letter.png" id="letter" onclick="showInitiative()">
+            <br> <br>
+
+            <!-- <img id="mobile-ini-screen" src="./assets/RIGHT-TEXT-23.png" alt=""> -->
             
             <div id="name-menu">
 
@@ -166,7 +171,8 @@
                 
             </table>
 
-            <img id="nph-logo" src="./assets/logo/no-pressure-logo-white-04.png" alt="">
+            <img id="nph-logo" src="./assets/buttons/logo-nph-black.png" alt="">
+            
         </div>
 
         <div class="content" id="content-right">
@@ -341,6 +347,43 @@ manifestoBlock.addEventListener('click',()=>{
   con.style.filter= "none";
 })
 
+function showInitiative(){
+  console.log("okay")
+  var x = document.getElementById('content-right');
+  var computedStyle = window.getComputedStyle(x);
+  if (computedStyle.display === "none") {
+    x.style.display = "block";
+    
+    var title_img=document.getElementById('title-image');
+  title_img.style.filter= "blur(16px)";
+
+  var mod=document.getElementById('aSide');
+  mod.style.filter= "blur(16px)";
+
+  var con=document.getElementById('container');
+  con.style.backdropFilter="blur(16px)";
+
+  var otherButton=document.getElementById('hamburger');
+  otherButton.style.filter="blur(16px)";
+  }
+
+  else if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+
+x.style.display = "none";
+
+var title_img=document.getElementById('title-image');
+title_img.style.filter= "none";
+
+var mod=document.getElementById('aSide');
+mod.style.filter= "none";
+
+var con=document.getElementById('container');
+con.style.backdropFilter="none";
+
+var otherButton=document.getElementById('hamburger');
+  otherButton.style.filter="none";
+}
+}
 
 function showBurgerMenu() {
   var x = document.getElementById('name-menu');
@@ -357,6 +400,9 @@ function showBurgerMenu() {
 
   var con=document.getElementById('container');
   con.style.backdropFilter="blur(16px)";
+
+  var otherButton=document.getElementById('letter');
+  otherButton.style.filter="blur(16px)";
   }
   else if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 
@@ -370,6 +416,9 @@ function showBurgerMenu() {
 
   var con=document.getElementById('container');
   con.style.backdropFilter="none";
+
+  var otherButton=document.getElementById('letter');
+  otherButton.style.filter="none";
    }
 
   x.style.opacity="70%"
