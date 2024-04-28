@@ -441,16 +441,21 @@ background-color: #fff;
   align-items: center;
 padding: 0px;
 margin: 0px;
+left: 0vw;
+    top: 15%;
+   
+    position: absolute;
 
     }
 
     #name-menu button {
       padding: 5px 20px;
-      margin: 10px 5px; 
+      margin: 15px 5px; 
     }
 
     #content-left{
       padding: 0px;
+      margin: 0px;
     }
 
     #content-right {
