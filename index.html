@@ -27,7 +27,7 @@
             <!-- 3D objsect -->
             <!-- This inserts the 3D object inside the aside container -->
             <div id="ana" class="element3d">
-                <model-viewer  id="ana-color"  src="assets/ana/scene.gltf" alt="ana model" auto-rotate auto-rotate-delay="0" rotation-per-second="800%" interaction-prompt="none" environment-image="assets/bggrad-1.png"
+                <model-viewer  id="ana-color"  src="assets/ana/scene.gltf" alt="ana model" auto-rotate auto-rotate-delay="0" rotation-per-second="800%" interaction-prompt="none" camera-controls environment-image="assets/bggrad-1.png"
                  touch-action ar ios-src="assets/ana/scene.gltf">
           
                 </model-viewer>
@@ -354,7 +354,8 @@ function showBurgerMenu() {
   var con=document.getElementById('container');
   con.style.backdropFilter="blur(16px)";
   }
-  else {
+  else if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+
      x.style.display = "none";
 
      var title_img=document.getElementById('title-image');
