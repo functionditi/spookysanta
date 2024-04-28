@@ -303,9 +303,9 @@ body{
 
 
   #nph-logo{
-   
-    width: 50%;
-    /* mix-blend-mode:overlay; */
+   padding-top: 6rem;
+    width: 30%;
+    mix-blend-mode:exclusion;
   }
 
   table{
@@ -423,7 +423,7 @@ background-color: #fff;
 
     #title-image{
      
-      width: 180%;
+      width: 160%;
     }
 
     #initiative{
@@ -502,14 +502,19 @@ margin: 0px;
 
   #hamburger{
     display:block;
-    left: 75vw;
-    top: 5vh;
+    left: 70vw;
+    top: 4vh;
    
     position: absolute;
-   
-    margin: 0%;
-    padding: 4% 10%;
+   width: 30%;
+
+   /* box-shadow: 0 0 10px 10px #ff0000; */
+   box-shadow: 0 0 10px 1px #00d9ff;
     
+  }
+
+  #nph-logo{
+    display: none;
   }
 
   
