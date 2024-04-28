@@ -442,7 +442,7 @@ background-color: #fff;
 padding: 0px;
 margin: 0px;
 left: 0vw;
-    top: 15%;
+    top: 10%;
    
     position: absolute;
 
@@ -450,7 +450,7 @@ left: 0vw;
 
     #name-menu button {
       padding: 5px 20px;
-      margin: 15px 5px; 
+      margin: 10px 0px; 
     }
 
     #content-left{
